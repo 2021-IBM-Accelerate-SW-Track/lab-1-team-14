@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import TodoForm from "./component/TodoForm";
 import TodoList from "./component/TodoList";
+import { CenterFocusStrong } from "@material-ui/icons";
 
 
 // const [state, seState] = useState([]);
@@ -54,7 +55,7 @@ function App() {
           React Todo
         </Typography>
         <TodoForm addTodo={addTodo}/>
-        <TodoList 
+        <TodoList
           todos={todos} 
           toggleComplete={toggleComplete}
           removeTodo={removeTodo}/>

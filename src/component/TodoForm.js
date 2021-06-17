@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 // import { unmountComponentAtNode } from "react-dom";
 
-
+/* DESCRIPTION
+ * Handles: text input and text submission
+ */
 
 function TodoForm({ addTodo }) {
     const [todo, setTodo] = useState({
