@@ -19,7 +19,8 @@ function Todo({ todo, toggleComplete, removeTodo }) {
                 variant="body1"
                 style = {{ 
                 textDecoration: todo.completed ? "line-through" : null
-                }}>{todo.task}
+            }}>
+                {todo.task}
             </Typography>
             <IconButton onClick={handleRemoveClick}>
                 <CloseIcon/>

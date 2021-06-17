@@ -1,7 +1,7 @@
 import {Button, TextField} from "@material-ui/core"
 import React, { useState } from "react";
-import {v4 as uuid} from 'uuid'
-import { unmountComponentAtNode } from "react-dom";
+import { v4 as uuidv4 } from 'uuid';
+// import { unmountComponentAtNode } from "react-dom";
 
 
 
@@ -19,7 +19,7 @@ function TodoForm({ addTodo }) {
     function handleSubmit(e) {
         e.preventDefault();
         if(todo.task.trim()) {
-            addTodo({...todo, id: uuid.v4});
+            addTodo({...todo, id: uuidv4()});
             
             //rest task input
             setTodo({...todo, task: ""});
@@ -27,7 +27,7 @@ function TodoForm({ addTodo }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="todo-form" onSubmit={handleSubmit}>
             <TextField
                 label="Task" 
                 name = "task"

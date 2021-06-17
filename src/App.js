@@ -1,7 +1,7 @@
 import Typography from "@material-ui/core/Typography"
 import Header from "./component/header"
-import './App.css';
 import React, { useEffect, useState } from "react";
+import './App.css';
 import TodoForm from "./component/TodoForm";
 import TodoList from "./component/TodoList";
 
@@ -50,7 +50,9 @@ function App() {
 
   return (
     <div className="App">
-        <Typography variant="h1" style={{padding: 16}}>React Todo</Typography>
+        <Typography variant="h1" style={{padding: 16}}>
+          React Todo
+        </Typography>
         <TodoForm addTodo={addTodo}/>
         <TodoList 
           todos={todos} 
