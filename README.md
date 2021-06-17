@@ -5,6 +5,9 @@ As a team, you should create and style the front-end of a to-do list web applica
 - No back-end is required for this lab, all data (tasks) should live in the front-end.
 
 
+![](https://i.imgur.com/NhXomc7.gif)
+
+
 ## Requirements
 Feature requirements:
 + **Take in and display** to do list items
