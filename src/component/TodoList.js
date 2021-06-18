@@ -1,4 +1,4 @@
-import {List} from "@material-ui/core";
+import { List } from "@material-ui/core";
 import React from "react";
 import Todo from "./Todo";
 
@@ -14,7 +14,8 @@ function TodoList({ todos, toggleComplete, removeTodo}) {
                     key = {todo.id} 
                     todo = {todo} 
                     toggleComplete = {toggleComplete}
-                    removeTodo = {removeTodo}/>
+                    removeTodo = {removeTodo}
+                />
             ))}
         </List>
     );
